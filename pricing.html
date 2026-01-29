@@ -37,7 +37,7 @@
             </div>
 
             <div class="nav-actions">
-                <a href="/schedule-a-demo" class="btn btn-dark">Book a demo</a>
+                <a href="#contact-form" class="btn btn-dark">Book a demo</a>
                 <div class="language-selector">
                     <svg class="globe-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                         <circle cx="12" cy="12" r="10"/>
@@ -61,20 +61,32 @@
     <!-- Pricing Hero -->
     <section class="pricing-hero">
         <div class="container">
-            <div class="pricing-hero-content">
-                <span class="pricing-badge">Simple, transparent pricing</span>
-                <h1>Plans that scale with your sustainability goals</h1>
-                <p>Choose the plan that fits your organization. All plans include our core platform with data management, reporting, and dedicated support.</p>
+            <!-- Trust Badges -->
+            <div class="hero-badges">
+                <div class="hero-badge">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/6916df243bf490d582224be4_Icon%20Fiability%20Blue.svg" alt="ISO 14064">
+                    <span>ISO 14064 Certified</span>
+                </div>
+                <div class="hero-badge">
+                    <div class="stars">★★★★★</div>
+                    <span>4.6/5 on G2</span>
+                </div>
+                <div class="hero-badge">
+                    <div class="stars">★★★★★</div>
+                    <span>4.5/5 on Capterra</span>
+                </div>
             </div>
 
-            <!-- Billing Toggle -->
-            <div class="billing-toggle">
-                <span class="toggle-label" data-period="monthly">Monthly</span>
-                <label class="toggle-switch">
-                    <input type="checkbox" id="billingToggle">
-                    <span class="toggle-slider"></span>
-                </label>
-                <span class="toggle-label" data-period="annual">Annual <span class="save-badge">Save 20%</span></span>
+            <div class="pricing-hero-content">
+                <h1>Plans that adapt to your company size.</h1>
+                <p class="hero-subtitle">All-in-one sustainability platform: ESG data management, carbon footprint calculation, compliance reporting, and dedicated expert support. Everything included.</p>
+            </div>
+
+            <!-- Company Size Toggle -->
+            <div class="size-toggle">
+                <button class="size-btn active" data-size="small">1-100 employees</button>
+                <button class="size-btn" data-size="medium">100-500 employees</button>
+                <button class="size-btn" data-size="large">500+ employees</button>
             </div>
         </div>
     </section>
@@ -83,398 +95,439 @@
     <section class="pricing-cards-section">
         <div class="container">
             <div class="pricing-cards">
-                <!-- Starter Plan -->
+                <!-- Essential Plan -->
                 <div class="pricing-card">
                     <div class="card-header">
-                        <h3>Starter</h3>
-                        <p class="card-description">For companies beginning their sustainability journey</p>
+                        <h3>Essential</h3>
+                        <p class="card-description">For companies starting their sustainability journey with basic reporting needs.</p>
                     </div>
-                    <div class="card-price">
-                        <div class="price-amount">
-                            <span class="currency">€</span>
-                            <span class="amount" data-monthly="490" data-annual="392">490</span>
-                            <span class="period">/month</span>
+                    <div class="card-features-preview">
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Carbon footprint (Scope 1 & 2)</span>
                         </div>
-                        <p class="price-note">Billed annually. Up to 50 users.</p>
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Basic ESG data management</span>
+                        </div>
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Standard reports (GRI, CDP)</span>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn-outline btn-block">Start free trial</a>
-                    <ul class="feature-list">
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Carbon footprint calculation
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Basic ESG data management
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Standard reports (GRI, CDP)
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Email support
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            5 GB storage
-                        </li>
-                    </ul>
+                    <a href="#contact-form" class="btn btn-outline btn-block">Request a demo</a>
                 </div>
 
                 <!-- Professional Plan -->
                 <div class="pricing-card featured">
-                    <div class="featured-badge">Most popular</div>
+                    <div class="featured-badge">Most chosen</div>
                     <div class="card-header">
                         <h3>Professional</h3>
-                        <p class="card-description">For growing companies with complex sustainability needs</p>
+                        <p class="card-description">For growing companies with CSRD compliance needs and complex value chains.</p>
                     </div>
-                    <div class="card-price">
-                        <div class="price-amount">
-                            <span class="currency">€</span>
-                            <span class="amount" data-monthly="990" data-annual="792">990</span>
-                            <span class="period">/month</span>
+                    <div class="card-features-preview">
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Everything in Essential</span>
                         </div>
-                        <p class="price-note">Billed annually. Up to 200 users.</p>
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Full Scope 3 emissions</span>
+                        </div>
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>CSRD & ESRS compliance</span>
+                        </div>
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Automated data collection</span>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn-primary btn-block">Start free trial</a>
-                    <ul class="feature-list">
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <strong>Everything in Starter, plus:</strong>
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            CSRD & ESRS compliance
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Scope 1, 2 & 3 emissions
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Automated data collection
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            API access & integrations
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Priority support
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            50 GB storage
-                        </li>
-                    </ul>
+                    <a href="#contact-form" class="btn btn-primary btn-block">Request a demo</a>
                 </div>
 
                 <!-- Enterprise Plan -->
                 <div class="pricing-card">
                     <div class="card-header">
                         <h3>Enterprise</h3>
-                        <p class="card-description">For large organizations with advanced requirements</p>
+                        <p class="card-description">For large organizations requiring custom integrations and dedicated support.</p>
                     </div>
-                    <div class="card-price">
-                        <div class="price-amount custom">
-                            <span class="custom-text">Custom</span>
+                    <div class="card-features-preview">
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Everything in Professional</span>
                         </div>
-                        <p class="price-note">Tailored to your organization's needs</p>
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Custom integrations & API</span>
+                        </div>
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>SSO & advanced security</span>
+                        </div>
+                        <div class="feature-preview">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Dedicated account manager</span>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn-outline btn-block">Contact sales</a>
-                    <ul class="feature-list">
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <strong>Everything in Professional, plus:</strong>
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Unlimited users
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Custom integrations
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            SSO & advanced security
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Dedicated account manager
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Custom onboarding & training
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Unlimited storage
-                        </li>
-                    </ul>
+                    <a href="#contact-form" class="btn btn-outline btn-block">Contact sales</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Badges -->
-    <section class="trust-badges-section">
-        <div class="container">
-            <div class="trust-badges">
-                <div class="trust-badge">
-                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/6916df243bf490d582224be4_Icon%20Fiability%20Blue.svg" alt="ISO 14064">
-                    <div class="badge-content">
-                        <span class="badge-title">ISO 14064</span>
-                        <span class="badge-subtitle">Certified calculations</span>
-                    </div>
-                </div>
-                <div class="trust-badge">
-                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/6916df24aa56b2f631274dd4_Icon%20Locker%20Blue.svg" alt="ISO 27001">
-                    <div class="badge-content">
-                        <span class="badge-title">ISO 27001</span>
-                        <span class="badge-subtitle">Data security</span>
-                    </div>
-                </div>
-                <div class="trust-badge">
-                    <div class="rating-stars">★★★★★</div>
-                    <div class="badge-content">
-                        <span class="badge-title">4.6/5 on G2</span>
-                        <span class="badge-subtitle">45+ reviews</span>
-                    </div>
-                </div>
-                <div class="trust-badge">
-                    <div class="companies-count">2000+</div>
-                    <div class="badge-content">
-                        <span class="badge-title">Companies</span>
-                        <span class="badge-subtitle">Trust Dcycle</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Feature Comparison Table -->
-    <section class="comparison-section">
+    <!-- Features Accordion Section -->
+    <section class="features-accordion-section">
         <div class="container">
             <div class="section-header">
-                <h2>Compare all features</h2>
-                <p>Find the right plan for your sustainability management needs</p>
+                <h2>What's included in each plan</h2>
+                <p>Explore all features by category</p>
             </div>
 
-            <div class="comparison-table-wrapper">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th class="feature-col">Features</th>
-                            <th>Starter</th>
-                            <th class="featured-col">Professional</th>
-                            <th>Enterprise</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Data Management -->
-                        <tr class="category-row">
-                            <td colspan="4">Data Management</td>
-                        </tr>
-                        <tr>
-                            <td>Data Hub</td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Data versioning & history</td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Automated data collection</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Custom data sources</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
+            <div class="features-accordion">
+                <!-- Data Management -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                            </svg>
+                            <span>Data Management</span>
+                        </div>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="features-grid-3">
+                            <div class="plan-features">
+                                <h4>Essential</h4>
+                                <ul>
+                                    <li>Central Data Hub</li>
+                                    <li>Manual data entry</li>
+                                    <li>Basic data validation</li>
+                                    <li>5 GB storage</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features highlighted">
+                                <h4>Professional</h4>
+                                <ul>
+                                    <li>Everything in Essential</li>
+                                    <li>Automated data collection</li>
+                                    <li>Data versioning & history</li>
+                                    <li>Custom data sources</li>
+                                    <li>50 GB storage</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features">
+                                <h4>Enterprise</h4>
+                                <ul>
+                                    <li>Everything in Professional</li>
+                                    <li>Unlimited data sources</li>
+                                    <li>Advanced data governance</li>
+                                    <li>Data quality scoring</li>
+                                    <li>Unlimited storage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <!-- Carbon & Emissions -->
-                        <tr class="category-row">
-                            <td colspan="4">Carbon & Emissions</td>
-                        </tr>
-                        <tr>
-                            <td>Scope 1 & 2 emissions</td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Scope 3 emissions</td>
-                            <td><span class="limited">Limited</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>ISO 14064 certified calculations</td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Product carbon footprint (LCA)</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
+                <!-- Carbon & Emissions -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <span>Carbon & Emissions</span>
+                        </div>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="features-grid-3">
+                            <div class="plan-features">
+                                <h4>Essential</h4>
+                                <ul>
+                                    <li>Scope 1 & 2 emissions</li>
+                                    <li>ISO 14064 certified calculations</li>
+                                    <li>Basic emission factors</li>
+                                    <li>Annual carbon reports</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features highlighted">
+                                <h4>Professional</h4>
+                                <ul>
+                                    <li>Everything in Essential</li>
+                                    <li>Full Scope 3 (15 categories)</li>
+                                    <li>Supplier emissions tracking</li>
+                                    <li>Product carbon footprint</li>
+                                    <li>Reduction targets & tracking</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features">
+                                <h4>Enterprise</h4>
+                                <ul>
+                                    <li>Everything in Professional</li>
+                                    <li>Life Cycle Assessment (LCA)</li>
+                                    <li>Science-Based Targets</li>
+                                    <li>Custom emission factors</li>
+                                    <li>Third-party verification support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <!-- Reporting -->
-                        <tr class="category-row">
-                            <td colspan="4">Reporting & Compliance</td>
-                        </tr>
-                        <tr>
-                            <td>GRI reporting</td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>CDP submission</td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>CSRD / ESRS compliance</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>SFDR reporting</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Custom report builder</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
+                <!-- Reporting & Compliance -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                            <span>Reporting & Compliance</span>
+                        </div>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="features-grid-3">
+                            <div class="plan-features">
+                                <h4>Essential</h4>
+                                <ul>
+                                    <li>GRI reporting</li>
+                                    <li>CDP questionnaire</li>
+                                    <li>Basic sustainability report</li>
+                                    <li>PDF export</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features highlighted">
+                                <h4>Professional</h4>
+                                <ul>
+                                    <li>Everything in Essential</li>
+                                    <li>CSRD / ESRS compliance</li>
+                                    <li>SFDR reporting</li>
+                                    <li>EU Taxonomy alignment</li>
+                                    <li>Audit-ready documentation</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features">
+                                <h4>Enterprise</h4>
+                                <ul>
+                                    <li>Everything in Professional</li>
+                                    <li>Custom report builder</li>
+                                    <li>Multi-framework reports</li>
+                                    <li>Board-ready presentations</li>
+                                    <li>Regulatory change alerts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <!-- Platform -->
-                        <tr class="category-row">
-                            <td colspan="4">Platform & Integrations</td>
-                        </tr>
-                        <tr>
-                            <td>Users included</td>
-                            <td>Up to 50</td>
-                            <td>Up to 200</td>
-                            <td>Unlimited</td>
-                        </tr>
-                        <tr>
-                            <td>API access</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Standard integrations</td>
-                            <td>5</td>
-                            <td>20+</td>
-                            <td>Unlimited</td>
-                        </tr>
-                        <tr>
-                            <td>Custom integrations</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>SSO authentication</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
+                <!-- Platform & Integrations -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                            <span>Platform & Integrations</span>
+                        </div>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="features-grid-3">
+                            <div class="plan-features">
+                                <h4>Essential</h4>
+                                <ul>
+                                    <li>Up to 50 users</li>
+                                    <li>Web application</li>
+                                    <li>Email notifications</li>
+                                    <li>Basic role permissions</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features highlighted">
+                                <h4>Professional</h4>
+                                <ul>
+                                    <li>Up to 200 users</li>
+                                    <li>API access</li>
+                                    <li>20+ standard integrations</li>
+                                    <li>Advanced permissions</li>
+                                    <li>Workflow automation</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features">
+                                <h4>Enterprise</h4>
+                                <ul>
+                                    <li>Unlimited users</li>
+                                    <li>Custom integrations</li>
+                                    <li>SSO (SAML, OIDC)</li>
+                                    <li>Dedicated environment</li>
+                                    <li>Custom SLA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <!-- Support -->
-                        <tr class="category-row">
-                            <td colspan="4">Support & Services</td>
-                        </tr>
-                        <tr>
-                            <td>Email support</td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Priority support</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Dedicated account manager</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Custom onboarding</td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="dash">—</span></td>
-                            <td><span class="check">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>SLA guarantee</td>
-                            <td>99%</td>
-                            <td>99.5%</td>
-                            <td>99.9%</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- Support & Services -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title">
+                            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>Support & Services</span>
+                        </div>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="features-grid-3">
+                            <div class="plan-features">
+                                <h4>Essential</h4>
+                                <ul>
+                                    <li>Email support</li>
+                                    <li>Knowledge base access</li>
+                                    <li>Video tutorials</li>
+                                    <li>99% uptime SLA</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features highlighted">
+                                <h4>Professional</h4>
+                                <ul>
+                                    <li>Priority email support</li>
+                                    <li>Live chat support</li>
+                                    <li>Onboarding sessions (2)</li>
+                                    <li>Quarterly reviews</li>
+                                    <li>99.5% uptime SLA</li>
+                                </ul>
+                            </div>
+                            <div class="plan-features">
+                                <h4>Enterprise</h4>
+                                <ul>
+                                    <li>Dedicated account manager</li>
+                                    <li>24/7 phone support</li>
+                                    <li>Custom onboarding program</li>
+                                    <li>On-site training available</li>
+                                    <li>99.9% uptime SLA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by sustainability leaders</h2>
+                <p>See what our customers say about Dcycle</p>
+            </div>
+
+            <div class="testimonials-carousel">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Dcycle helped us reduce our reporting time by 70% while improving data accuracy. The platform is intuitive and the support team is excellent."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Sustainability Director</strong>
+                            <span>Manufacturing company, 500+ employees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"We finally have complete visibility of our Scope 3 emissions. The automated data collection saved us hundreds of hours."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>ESG Manager</strong>
+                            <span>Retail company, 1000+ employees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"CSRD compliance seemed overwhelming until we started using Dcycle. Now we're confident we'll meet all requirements."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>CFO</strong>
+                            <span>Technology company, 200+ employees</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="clients-section">
+        <div class="container">
+            <p class="clients-label">Trusted by 2000+ companies</p>
+            <div class="clients-logos">
+                <div class="logo-item">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/693abbdefc8588e9a033ea37_logo%20BS%20png.png" alt="BlueSun">
+                </div>
+                <div class="logo-item">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/6915beeb7ca57d9dda6e3f75_GRUPO-NORIA-blanco-png.png" alt="Grupo Noria" style="filter: invert(1);">
+                </div>
+                <div class="logo-item">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/6915c2406654d6aad9e4fd23_logo-monells-blanco.avif" alt="Monells" style="filter: invert(1);">
+                </div>
+                <div class="logo-item">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/693d0de76f6e67e2b3d44e57_Captura%20de%20pantalla%202025-06-12%20a%20las%2011.19.06.png" alt="Client">
+                </div>
+                <div class="logo-item">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/693d0de77e1ec9eba6e58420_Logo_grupo_elecnor_2018.png" alt="Elecnor">
+                </div>
+                <div class="logo-item">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/693d0de6fa0f97d2e2e15a49_Logo-CAME.png" alt="CAME">
+                </div>
+                <div class="logo-item">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/693d0de7c4e8d19e3edd3c1a_PARADORES-LOGO.png" alt="Paradores">
+                </div>
+                <div class="logo-item">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/693d0de73cef8f422b8e8f8c_Logo_santander.png" alt="Santander">
+                </div>
             </div>
         </div>
     </section>
@@ -484,52 +537,83 @@
         <div class="container">
             <div class="section-header">
                 <h2>Frequently asked questions</h2>
-                <p>Everything you need to know about our pricing</p>
             </div>
 
-            <div class="faq-grid">
+            <div class="faq-list">
                 <div class="faq-item">
-                    <h3 class="faq-question">Can I switch plans later?</h3>
-                    <p class="faq-answer">Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll get immediate access to new features. When downgrading, changes take effect at the end of your billing period.</p>
+                    <h3>How is pricing determined?</h3>
+                    <p>Pricing is based on your company size, complexity of your value chain, and the features you need. We offer flexible plans that grow with your sustainability program. Contact us for a personalized quote based on your specific requirements.</p>
                 </div>
 
                 <div class="faq-item">
-                    <h3 class="faq-question">Is there a free trial?</h3>
-                    <p class="faq-answer">Yes, we offer a 14-day free trial for both Starter and Professional plans. No credit card required. You'll have full access to all features in your chosen plan during the trial.</p>
+                    <h3>What's included in all plans?</h3>
+                    <p>All plans include access to our core platform with ISO 14064-certified carbon footprint calculations, basic ESG data management, standard compliance reports (GRI, CDP), and email support. The platform is fully hosted with automatic updates and EU data residency.</p>
                 </div>
 
                 <div class="faq-item">
-                    <h3 class="faq-question">What's included in the onboarding?</h3>
-                    <p class="faq-answer">All plans include self-service onboarding with video tutorials and documentation. Professional plans include 2 onboarding sessions with our team. Enterprise plans get fully customized onboarding programs.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3 class="faq-question">How does user pricing work?</h3>
-                    <p class="faq-answer">Each plan includes a set number of users. Starter includes up to 50 users, Professional up to 200 users. Need more? Enterprise plans offer unlimited users, or contact us to add extra users to any plan.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3 class="faq-question">What payment methods do you accept?</h3>
-                    <p class="faq-answer">We accept all major credit cards (Visa, Mastercard, American Express) and bank transfers for annual plans. Enterprise customers can also pay via invoice with NET-30 terms.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3 class="faq-question">Is my data secure?</h3>
-                    <p class="faq-answer">Absolutely. We're ISO 27001 certified with data stored in EU-based servers. All data is encrypted in transit and at rest. Enterprise plans include additional security features like SSO and audit logs.</p>
+                    <h3>Can I upgrade or change plans later?</h3>
+                    <p>Yes, you can upgrade your plan at any time as your needs evolve. Our team will help you transition smoothly, ensuring all your historical data is preserved. Downgrades take effect at the end of your billing period.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Contact Form CTA -->
+    <section class="contact-cta-section" id="contact-form">
         <div class="container">
-            <div class="cta-content">
-                <h2>Ready to simplify your sustainability management?</h2>
-                <p>Start your free trial today. No credit card required.</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-white btn-lg">Start free trial</a>
-                    <a href="#" class="btn btn-outline-white btn-lg">Talk to sales</a>
+            <div class="contact-cta-grid">
+                <div class="contact-cta-content">
+                    <h2>Talk to us</h2>
+                    <p>Get a personalized demo and pricing based on your company's needs. Our team will help you find the right plan for your sustainability goals.</p>
+                    <div class="contact-benefits">
+                        <div class="benefit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Personalized demo in 30 minutes</span>
+                        </div>
+                        <div class="benefit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Custom pricing proposal</span>
+                        </div>
+                        <div class="benefit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>No commitment required</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company name *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="employees">Number of employees</label>
+                            <select id="employees" name="employees">
+                                <option value="">Select...</option>
+                                <option value="1-50">1-50</option>
+                                <option value="51-200">51-200</option>
+                                <option value="201-500">201-500</option>
+                                <option value="501-1000">501-1000</option>
+                                <option value="1000+">1000+</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Request a demo</button>
+                        <p class="form-disclaimer">By submitting this form, you agree to our <a href="#">Privacy Policy</a>.</p>
+                    </form>
                 </div>
             </div>
         </div>

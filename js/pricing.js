@@ -1,60 +1,68 @@
 // Pricing Page JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
-    const billingToggle = document.getElementById('billingToggle');
-    const monthlyLabel = document.querySelector('[data-period="monthly"]');
-    const annualLabel = document.querySelector('[data-period="annual"]');
-    const priceAmounts = document.querySelectorAll('.price-amount .amount');
-    const priceNotes = document.querySelectorAll('.price-note');
+    // Company Size Toggle
+    const sizeButtons = document.querySelectorAll('.size-btn');
 
-    // Set initial state
-    updatePrices(false);
-    updateLabels(false);
-
-    if (billingToggle) {
-        billingToggle.addEventListener('change', function() {
-            const isAnnual = this.checked;
-            updatePrices(isAnnual);
-            updateLabels(isAnnual);
+    sizeButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            sizeButtons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
         });
-    }
+    });
 
-    function updatePrices(isAnnual) {
-        priceAmounts.forEach(amount => {
-            const monthly = amount.dataset.monthly;
-            const annual = amount.dataset.annual;
+    // Accordion functionality
+    const accordionItems = document.querySelectorAll('.accordion-item');
 
-            if (monthly && annual) {
-                amount.textContent = isAnnual ? annual : monthly;
-            }
-        });
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
 
-        priceNotes.forEach(note => {
-            if (note.textContent.includes('Billed')) {
-                note.textContent = note.textContent.replace(
-                    isAnnual ? 'Billed monthly' : 'Billed annually',
-                    isAnnual ? 'Billed annually' : 'Billed monthly'
-                );
-            }
-        });
-    }
+        header.addEventListener('click', function() {
+            const isOpen = item.classList.contains('open');
 
-    function updateLabels(isAnnual) {
-        if (monthlyLabel && annualLabel) {
-            monthlyLabel.classList.toggle('active', !isAnnual);
-            annualLabel.classList.toggle('active', isAnnual);
-        }
-    }
-
-    // FAQ Accordion (optional enhancement)
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        if (question) {
-            question.style.cursor = 'pointer';
-            question.addEventListener('click', function() {
-                item.classList.toggle('expanded');
+            // Close all other accordions
+            accordionItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('open');
+                }
             });
-        }
+
+            // Toggle current accordion
+            item.classList.toggle('open', !isOpen);
+        });
+    });
+
+    // Open first accordion by default
+    if (accordionItems.length > 0) {
+        accordionItems[0].classList.add('open');
+    }
+
+    // Form submission (prevent default for demo)
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Demo: Form submitted! In production, this would send to your CRM.');
+        });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                const navHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = target.offsetTop - navHeight - 20;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
 });
