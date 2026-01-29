@@ -1,6 +1,18 @@
 /* Pricing V2 - Dcycle Brand Aligned */
 
 /* ================================
+   UTILITY CLASSES
+   ================================ */
+.btn-block {
+    width: 100%;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+}
+
+/* ================================
    STICKY CTA BAR
    ================================ */
 .sticky-cta-bar {
@@ -986,31 +998,31 @@
 }
 
 /* ================================
-   ANIMATIONS
+   ANIMATIONS (with JS-controlled class)
    ================================ */
-.case-study-card,
-.feature-item,
-.review-card {
+.js-animate .case-study-card,
+.js-animate .feature-item,
+.js-animate .review-card {
     opacity: 0;
     transform: translateY(16px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.case-study-card.animate-in,
-.feature-item.animate-in,
-.review-card.animate-in {
+.js-animate .case-study-card.animate-in,
+.js-animate .feature-item.animate-in,
+.js-animate .review-card.animate-in {
     opacity: 1;
     transform: translateY(0);
 }
 
-.feature-item:nth-child(2) { transition-delay: 0.08s; }
-.feature-item:nth-child(3) { transition-delay: 0.16s; }
-.feature-item:nth-child(4) { transition-delay: 0.24s; }
-.feature-item:nth-child(5) { transition-delay: 0.32s; }
-.feature-item:nth-child(6) { transition-delay: 0.4s; }
+.js-animate .feature-item:nth-child(2) { transition-delay: 0.08s; }
+.js-animate .feature-item:nth-child(3) { transition-delay: 0.16s; }
+.js-animate .feature-item:nth-child(4) { transition-delay: 0.24s; }
+.js-animate .feature-item:nth-child(5) { transition-delay: 0.32s; }
+.js-animate .feature-item:nth-child(6) { transition-delay: 0.4s; }
 
-.review-card:nth-child(2) { transition-delay: 0.08s; }
-.review-card:nth-child(3) { transition-delay: 0.16s; }
+.js-animate .review-card:nth-child(2) { transition-delay: 0.08s; }
+.js-animate .review-card:nth-child(3) { transition-delay: 0.16s; }
 
 /* ================================
    RESPONSIVE

@@ -1,6 +1,8 @@
 // Pricing V2 - High Conversion JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Enable JS-controlled animations
+    document.body.classList.add('js-animate');
     // Sticky CTA Bar
     const stickyCta = document.getElementById('stickyCta');
     const heroSection = document.querySelector('.pricing-hero-v2');
@@ -155,28 +157,3 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 });
-
-// Add animation styles
-const style = document.createElement('style');
-style.textContent = `
-    .case-study-card, .feature-item, .review-card {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .case-study-card.animate-in, .feature-item.animate-in, .review-card.animate-in {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .feature-item:nth-child(2) { transition-delay: 0.1s; }
-    .feature-item:nth-child(3) { transition-delay: 0.2s; }
-    .feature-item:nth-child(4) { transition-delay: 0.3s; }
-    .feature-item:nth-child(5) { transition-delay: 0.4s; }
-    .feature-item:nth-child(6) { transition-delay: 0.5s; }
-
-    .review-card:nth-child(2) { transition-delay: 0.1s; }
-    .review-card:nth-child(3) { transition-delay: 0.2s; }
-`;
-document.head.appendChild(style);
