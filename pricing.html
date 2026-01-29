@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Dcycle | Sustainability Management Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="icon" href="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/63319adf3a99dd47ab70e363_588a6507d06f6719692a2d15.png" type="image/png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/68f75ff4a5608fe77ad51049_logo_dcycle.png" alt="Dcycle" height="28">
+            </a>
+
+            <div class="nav-menu">
+                <div class="nav-item dropdown">
+                    <span>Solutions</span>
+                    <svg class="chevron-icon" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M2 4L5 7L8 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <a href="#resources" class="nav-item">Resources</a>
+                <div class="nav-item dropdown">
+                    <span>Customers</span>
+                    <svg class="chevron-icon" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M2 4L5 7L8 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <a href="pricing.html" class="nav-item active">Pricing</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="/schedule-a-demo" class="btn btn-dark">Book a demo</a>
+                <div class="language-selector">
+                    <svg class="globe-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                    <span>English</span>
+                    <svg class="chevron-icon" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M2 4L5 7L8 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Pricing Hero -->
+    <section class="pricing-hero">
+        <div class="container">
+            <div class="pricing-hero-content">
+                <span class="pricing-badge">Simple, transparent pricing</span>
+                <h1>Plans that scale with your sustainability goals</h1>
+                <p>Choose the plan that fits your organization. All plans include our core platform with data management, reporting, and dedicated support.</p>
+            </div>
+
+            <!-- Billing Toggle -->
+            <div class="billing-toggle">
+                <span class="toggle-label" data-period="monthly">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" data-period="annual">Annual <span class="save-badge">Save 20%</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="pricing-cards-section">
+        <div class="container">
+            <div class="pricing-cards">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Starter</h3>
+                        <p class="card-description">For companies beginning their sustainability journey</p>
+                    </div>
+                    <div class="card-price">
+                        <div class="price-amount">
+                            <span class="currency">€</span>
+                            <span class="amount" data-monthly="490" data-annual="392">490</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="price-note">Billed annually. Up to 50 users.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-block">Start free trial</a>
+                    <ul class="feature-list">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Carbon footprint calculation
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Basic ESG data management
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Standard reports (GRI, CDP)
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Email support
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            5 GB storage
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most popular</div>
+                    <div class="card-header">
+                        <h3>Professional</h3>
+                        <p class="card-description">For growing companies with complex sustainability needs</p>
+                    </div>
+                    <div class="card-price">
+                        <div class="price-amount">
+                            <span class="currency">€</span>
+                            <span class="amount" data-monthly="990" data-annual="792">990</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="price-note">Billed annually. Up to 200 users.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-block">Start free trial</a>
+                    <ul class="feature-list">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <strong>Everything in Starter, plus:</strong>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            CSRD & ESRS compliance
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Scope 1, 2 & 3 emissions
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Automated data collection
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            API access & integrations
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Priority support
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            50 GB storage
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Enterprise</h3>
+                        <p class="card-description">For large organizations with advanced requirements</p>
+                    </div>
+                    <div class="card-price">
+                        <div class="price-amount custom">
+                            <span class="custom-text">Custom</span>
+                        </div>
+                        <p class="price-note">Tailored to your organization's needs</p>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-block">Contact sales</a>
+                    <ul class="feature-list">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <strong>Everything in Professional, plus:</strong>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Unlimited users
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Custom integrations
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            SSO & advanced security
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Dedicated account manager
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Custom onboarding & training
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Unlimited storage
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges-section">
+        <div class="container">
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/6916df243bf490d582224be4_Icon%20Fiability%20Blue.svg" alt="ISO 14064">
+                    <div class="badge-content">
+                        <span class="badge-title">ISO 14064</span>
+                        <span class="badge-subtitle">Certified calculations</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/6916df24aa56b2f631274dd4_Icon%20Locker%20Blue.svg" alt="ISO 27001">
+                    <div class="badge-content">
+                        <span class="badge-title">ISO 27001</span>
+                        <span class="badge-subtitle">Data security</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="badge-content">
+                        <span class="badge-title">4.6/5 on G2</span>
+                        <span class="badge-subtitle">45+ reviews</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <div class="companies-count">2000+</div>
+                    <div class="badge-content">
+                        <span class="badge-title">Companies</span>
+                        <span class="badge-subtitle">Trust Dcycle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compare all features</h2>
+                <p>Find the right plan for your sustainability management needs</p>
+            </div>
+
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th class="feature-col">Features</th>
+                            <th>Starter</th>
+                            <th class="featured-col">Professional</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data Management -->
+                        <tr class="category-row">
+                            <td colspan="4">Data Management</td>
+                        </tr>
+                        <tr>
+                            <td>Data Hub</td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Data versioning & history</td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Automated data collection</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Custom data sources</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+
+                        <!-- Carbon & Emissions -->
+                        <tr class="category-row">
+                            <td colspan="4">Carbon & Emissions</td>
+                        </tr>
+                        <tr>
+                            <td>Scope 1 & 2 emissions</td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Scope 3 emissions</td>
+                            <td><span class="limited">Limited</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>ISO 14064 certified calculations</td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Product carbon footprint (LCA)</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+
+                        <!-- Reporting -->
+                        <tr class="category-row">
+                            <td colspan="4">Reporting & Compliance</td>
+                        </tr>
+                        <tr>
+                            <td>GRI reporting</td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>CDP submission</td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>CSRD / ESRS compliance</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>SFDR reporting</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Custom report builder</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+
+                        <!-- Platform -->
+                        <tr class="category-row">
+                            <td colspan="4">Platform & Integrations</td>
+                        </tr>
+                        <tr>
+                            <td>Users included</td>
+                            <td>Up to 50</td>
+                            <td>Up to 200</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>API access</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Standard integrations</td>
+                            <td>5</td>
+                            <td>20+</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Custom integrations</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>SSO authentication</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+
+                        <!-- Support -->
+                        <tr class="category-row">
+                            <td colspan="4">Support & Services</td>
+                        </tr>
+                        <tr>
+                            <td>Email support</td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Priority support</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Dedicated account manager</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Custom onboarding</td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="dash">—</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>SLA guarantee</td>
+                            <td>99%</td>
+                            <td>99.5%</td>
+                            <td>99.9%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently asked questions</h2>
+                <p>Everything you need to know about our pricing</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I switch plans later?</h3>
+                    <p class="faq-answer">Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll get immediate access to new features. When downgrading, changes take effect at the end of your billing period.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Is there a free trial?</h3>
+                    <p class="faq-answer">Yes, we offer a 14-day free trial for both Starter and Professional plans. No credit card required. You'll have full access to all features in your chosen plan during the trial.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What's included in the onboarding?</h3>
+                    <p class="faq-answer">All plans include self-service onboarding with video tutorials and documentation. Professional plans include 2 onboarding sessions with our team. Enterprise plans get fully customized onboarding programs.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">How does user pricing work?</h3>
+                    <p class="faq-answer">Each plan includes a set number of users. Starter includes up to 50 users, Professional up to 200 users. Need more? Enterprise plans offer unlimited users, or contact us to add extra users to any plan.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What payment methods do you accept?</h3>
+                    <p class="faq-answer">We accept all major credit cards (Visa, Mastercard, American Express) and bank transfers for annual plans. Enterprise customers can also pay via invoice with NET-30 terms.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Is my data secure?</h3>
+                    <p class="faq-answer">Absolutely. We're ISO 27001 certified with data stored in EU-based servers. All data is encrypted in transit and at rest. Enterprise plans include additional security features like SSO and audit logs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to simplify your sustainability management?</h2>
+                <p>Start your free trial today. No credit card required.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-white btn-lg">Start free trial</a>
+                    <a href="#" class="btn btn-outline-white btn-lg">Talk to sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/639747cbae9ec699de0a2bb0_variaciones%20logo.png" alt="Dcycle" height="32">
+                    </a>
+                    <p>Simplify sustainability management for business.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/dcycle" target="_blank" rel="noopener">
+                            <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/69305787b39c110b84fe4dce_linkedin_black.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://instagram.com/dcycle" target="_blank" rel="noopener">
+                            <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/693057f0cdad2725de15ddf2_instagram_black.svg" alt="Instagram">
+                        </a>
+                        <a href="https://twitter.com/dcycle" target="_blank" rel="noopener">
+                            <img src="https://cdn.prod.website-files.com/6321ffbc871a0f60deca5c75/69305814c369afe2fe413851_twitter_black.svg" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">By Industry</a></li>
+                        <li><a href="#">By Use Case</a></li>
+                        <li><a href="#">Carbon Footprint</a></li>
+                        <li><a href="#">ESG Reporting</a></li>
+                        <li><a href="#">LCA Analysis</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dcycle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/pricing.js"></script>
+</body>
+</html>
